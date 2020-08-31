@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Muli", sans-serif;
+}
+
+.popup {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: -4px 4px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding: 20px 30px;
+  max-width: 500px;
+}
+
+.popup p {
+  color: #555;
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  background-color: rgb(255, 153, 153);
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  padding: 15px 30px;
+  margin: 10px;
+  position: relative;
+}
+
+.btn:active {
+  box-shadow: none;
+  transform: scale(0.98);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn.ghost {
+  background-color: #fff;
+  color: rgb(255, 153, 153);
+  box-shadow: none;
+}
+
+.btn.ghost span {
+  background-color: rgb(255, 153, 153);
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 10px;
+  padding: 3px 7px;
+  top: -10px;
+  right: -10px;
+  transform: rotate(10deg);
+  position: absolute;
+}
+
+.popup img {
+  width: 70px;
+}
